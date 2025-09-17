@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS michalsnik scroll effect link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- flowbite link cdn css -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
@@ -22,7 +24,11 @@
   <body>
     <!-- ===================Header section============ -->
     <header>
-      <nav class="bg-white border-gray-200 dark:bg-white">
+      <nav
+        class="bg-white border-gray-200 dark:bg-white"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
         <div
           class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -56,7 +62,11 @@
             </button>
 
             <!-- desktop search -->
-            <div class="relative hidden md:block">
+            <div
+              class="relative hidden md:block"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
               <div
                 class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
               >
@@ -321,6 +331,8 @@
           id="default-carousel"
           class="relative w-full"
           data-carousel="slide"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <div
             class="relative h-80 md:h-[700px] overflow-hidden rounded-lg shadow-2xl"
@@ -499,11 +511,19 @@
       <section class="mt-16 max-w-screen-2xl mx-auto">
         <!-- second title -->
         <div class="text-center">
-          <h2 class="text-4xl md:text-6xl font-extrabold text-[#15009c]">
+          <h2
+            class="text-4xl md:text-6xl font-extrabold text-[#15009c]"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             Why Apsis
           </h2>
 
-          <div class="flex items-center justify-center mt-2">
+          <div
+            class="flex items-center justify-center mt-2"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             <!-- left line -->
             <div class="h-[4px] w-36 bg-[#15009c]"></div>
 
@@ -516,7 +536,7 @@
         </div>
 
         <!-- second image section -->
-        <div class="mt-10">
+        <div class="mt-10" data-aos="flip-left" data-aos-duration="3000">
           <img src="./assets/banner2.png" alt="banner2" />
         </div>
       </section>
@@ -524,5 +544,11 @@
 
     <!-- flowbite cdn js -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- cdn sources AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize Aos -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
